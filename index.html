@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html id="ee" lang="ru">
+
+<head>
+  <title>Рыбки</title>
+  <meta charset="UTF-8">
+
+  <link rel="prefetch" href="pictures/sea_2.jpg">
+  <link rel="prefetch" href="pictures/0r.gif">
+  <link rel="prefetch" href="pictures/1r.gif">
+  <link rel="prefetch" href="pictures/2r.gif">
+  <link rel="prefetch" href="pictures/3r.gif">
+  <link rel="prefetch" href="pictures/4r.gif">
+  <link rel="prefetch" href="pictures/5r.gif">
+  <link rel="prefetch" href="pictures/skeleton_r.gif">
+  <link rel="prefetch" href="pictures/skeleton_l.gif">
+
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+</head>
+
+<body style="margin: 0px; background-color: darkslategray;">
+
+  <header class="header">
+    <table style="width: 50vw; margin: auto;">
+      <tbody>
+        <tr>
+          <td style="text-align: right">
+            <p> <span class="button cursorPointer" onclick="restartGame()">СТАРТ</span> </p>
+          </td>
+          <td style="text-align: center; width: 150px;">
+            <p>Счет:
+              <span id="scoreId">0</span>
+            </p>
+          </td>
+          <td style="text-align: left">
+            <p> <span class="button cursorPointer" onclick="window.open('help.html')">Справка</span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <div id="gameField" class="gameField" draggable="false" ondragstart="return false">
+    <img id="0" class="img cursorPointer">
+    <img id="1" class="img cursorPointer">
+    <img id="2" class="img cursorPointer">
+    <img id="3" class="img cursorPointer">
+    <img id="4" class="img cursorPointer">
+    <img id="5" class="img cursorPointer">
+  </div>
+
+  <footer class="header">
+    <table style="text-align: center; width: 100%;">
+      <tbody>
+        <tr>
+          <td>
+            <p>WebLab</p>
+            <p>Копирайт, трали-вали-тра-та-та!</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>
+
+  <div id="gameOver" class="gameOver">
+    <div>
+      <h1 id="gameOverH1">Игра окончена!!!</h1>
+      <p id="gameOverP">Чтобы начать новую игру, нажмите СТАРТ или клавишу F5.</p>
+    </div>
+  </div>
+
+  <!-- <div style="display: none">
+    <img src="pictures/0r.gif">
+    <img src="pictures/1r.gif">
+    <img src="pictures/2r.gif">
+    <img src="pictures/3r.gif">
+    <img src="pictures/4r.gif">
+    <img src="pictures/5r.gif">
+    <img src="pictures/skeleton_r.gif">
+    <img src="pictures/skeleton_l.gif">
+  </div> -->
+</body>
+
+</html>

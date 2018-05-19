@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Рыбки: справка.</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+        margin: 0px;
+    }
+
+    .bg1 {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0px;
+      background-color: rgb(47, 79, 79);
+      background-size: contain;
+    }
+    
+    .bg2 {
+      width: 100vw;
+      height: 100vh;
+      filter: blur(10px) grayscale(1) opacity(.2);
+      background-image: url('./pictures/0l.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .fg {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0px;
+    }
+
+    .fg div{
+      width: 100vw;
+      height: 100vh;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 16pt;
+      text-align: center;
+      color: aqua;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+
+  <div class="fg">
+    <div> <!--display: table-cell не работает с position: absolute-->
+      <h1>Описание игры "рыбки".</h1>
+      <p>Цель игры: тыцкать "мышкой" рыбок, пока все не сдохнут.</p>
+      <p>Устал палец - жми клавишу "пробел" (длинная такая).</p>
+      <p>Начать с начала - тычь "старт" вверху экрана.</p>
+      <p>Забыл, что делать - вызывай справку.</p>
+    </div>
+  </div>
+</body>
+</html>
